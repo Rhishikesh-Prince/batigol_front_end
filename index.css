@@ -3,6 +3,7 @@ scroll-behavior:smooth;
 }
 body{
 animation:fadein 1s ease;
+overflow-x: hidden;
 }
 
 @keyframes fadein{
@@ -21,6 +22,22 @@ h1,h2,h3,h4,h5{
 }
 
 /* nav */
+
+
+
+/* Fix navbar toggler visibility */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(168, 31, 69, 0.5);
+    outline: none;
+}
 
 .custom-navbar{
 	padding:2px 0;
@@ -43,6 +60,9 @@ h1,h2,h3,h4,h5{
 	.logo{
 		height:55px;
 	}
+	nav{
+		width: 100vw !important;
+	}
 }
 
 @media (max-width:576px){
@@ -50,7 +70,17 @@ h1,h2,h3,h4,h5{
 		height:45px;
 	}
 }
+@media (max-width:992px){
 
+	.navbar-nav{
+		align-items:flex-start !important;
+	}
+
+	.nav-link{
+		margin:10px 0;
+		font-size:18px;
+	}
+}
 .logo:hover{
 	transform:scale(1.05);
 }
@@ -135,6 +165,18 @@ h1,h2,h3,h4,h5{
 	align-items:center;
 	color:white;
 	overflow:hidden;
+}
+
+@media (max-width:768px) {
+	.hero{
+	height:100%;
+
+
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+
+	}
+	
 }
 
 .hero-overlay{
@@ -607,6 +649,80 @@ h1,h2,h3,h4,h5{
 	opacity:0.35;
 }
 
+/* process  */
+.process{
+	padding:110px 0;
+	background:#ffffff;
+}
+
+.process-title{
+	font-family:'Bebas Neue',sans-serif;
+	font-size:60px;
+	letter-spacing:3px;
+	color:#1F4463;
+}
+
+.process-step{
+	padding:30px;
+	border-radius:14px;
+	background:#f5f7fa;
+	transition:0.4s;
+	position:relative;
+}
+
+.process-step:hover{
+	transform:translateY(-10px);
+	box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.step-number{
+	font-family:'Bebas Neue',sans-serif;
+	font-size:40px;
+	color:#A81F45;
+	margin-bottom:10px;
+}
+
+.process-step h5{
+	font-family:'Bebas Neue',sans-serif;
+	font-size:22px;
+	letter-spacing:1px;
+	color:#1F4463;
+}
+
+.process-step p{
+	font-family:'Montserrat',sans-serif;
+	font-size:14px;
+	color:#555;
+}
+/* whyus  */
+.why-us{
+	padding:110px 0;
+	background:linear-gradient(135deg,#1F4463,#0f2435);
+	color:white;
+}
+
+.why-title{
+	font-family:'Bebas Neue',sans-serif;
+	font-size:60px;
+	letter-spacing:3px;
+	margin-bottom:20px;
+}
+
+.why-list{
+	list-style:none;
+	padding:0;
+}
+
+.why-list li{
+	font-family:'Montserrat',sans-serif;
+	font-size:16px;
+	margin-bottom:12px;
+}
+
+.why-img{
+	border-radius:12px;
+	box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
 
 /* trusin */
 
@@ -792,10 +908,103 @@ h1,h2,h3,h4,h5{
 
 }
 
+/* HERO */
 
+.contact-hero{
+	height:65vh;
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+	margin-top:90px;
+}
+
+/* BACKGROUND */
+
+.contact-hero .hero-bg{
+	position:absolute;
+	inset:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	z-index:1;
+
+	transform:scale(1.1);
+	animation:heroZoom 12s ease-in-out infinite alternate;
+}
+
+/* OVERLAY */
+
+.contact-hero .hero-overlay{
+	position:absolute;
+	inset:0;
+	background:linear-gradient(135deg,#3c566b51,#0f2435);
+	opacity:0.9;
+	z-index:2;
+}
+
+/* CONTENT */
+
+.contact-hero .hero-content{
+	position:relative;
+	z-index:3;
+	max-width:750px;
+}
+
+/* TITLE */
+
+.contact-hero h1{
+	font-family:'Bebas Neue',sans-serif;
+	font-size:90px;
+	letter-spacing:5px;
+	color:white;
+
+	text-shadow:0 10px 30px rgba(0,0,0,0.4);
+	margin-bottom:10px;
+}
+
+/* TEXT */
+
+.contact-hero p{
+	font-family:'Montserrat',sans-serif;
+	font-size:18px;
+	color:#ddd;
+	letter-spacing:1px;
+}
+
+/* LINE */
+
+.hero-line{
+	width:80px;
+	height:3px;
+	background:#A81F45;
+	margin:20px auto 0;
+	border-radius:5px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+	.contact-hero{
+		height:55vh;
+	}
+
+	.contact-hero h1{
+		font-size:45px;
+	}
+
+	.contact-hero p{
+		font-size:14px;
+		padding:0 10px;
+	}
+
+}
 .contact-section{
 	padding:110px 0;
 	background:linear-gradient(135deg,#f5f7fa,#eef2f7);
+	overflow:hidden;
 }
 
 .contact-title{

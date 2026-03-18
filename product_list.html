@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="product_list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -17,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
 	<div class="container">
 
@@ -65,323 +66,222 @@
 
 </nav>
 
-
-
-<section class="hero">
-
-	<div class="hero-overlay"></div>
-
-	<div class="container hero-container">
-
-		<div class="row align-items-center">
-
-			<div class="col-lg-6 hero-text" data-aos="fade-right">
-
-				<h1>Custom Sportswear Manufacturer in Qatar</h1>
-
-				<p>
-					Designing and manufacturing high-quality sports apparel
-					for clubs, schools, academies and tournaments.
-				</p>
-
-				<div class="hero-buttons">
-					<a class="btn hero-btn">View Products</a>
-					<a class="btn hero-btn-outline">Contact Us</a>
-				</div>
-
-			</div>
-
-			<div class="col-lg-6 hero-slider" data-aos="fade-left">
-
-				<div class="slider">
-
-					<img src="images/jersey1.webp" class="slide active">
-					<img src="images/jersey2.jpg" class="slide">
-					<img src="images/jersey3.jpg" class="slide">
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-
- <section class="about py-5">
+<section class="product-list-page">
 
 	<div class="container">
 
-		<div class="row align-items-center">
+		<!-- TITLE -->
+		<div class="text-center mb-5">
 
-			<div class="col-lg-6 about-image" data-aos="fade-right">
+			<h1 class="list-title" data-aos="fade-up">
+				Jerseys
+			</h1>
 
-				<div class="image-wrapper">
-					<img src="images/about.avif" class="img-fluid">
-				</div>
-
-			</div>
-
-			<div class="col-lg-6 about-content" data-aos="fade-left">
-
-				<h2 class="about-title">About Batigol</h2>
-
-				<p>
-					Batigol is a reputed sports apparel manufacturer and retailer
-					based in Doha, Qatar. Established in 2013 under the leadership
-					of Mr. Younis Darwish, Batigol specializes in designing and
-					producing customized sportswear including jerseys, training
-					kits, uniforms and accessories.
-				</p>
-
-				<p>
-					Our in-house production facility allows us to maintain high
-					quality standards and deliver products with faster turnaround time.
-				</p>
-
-				<a class="btn about-btn">Read More</a>
-
-			</div>
+			<p data-aos="fade-up" data-aos-delay="100">
+				Explore our collection of custom-designed sports jerseys
+			</p>
 
 		</div>
 
-	</div>
+		<!-- SEARCH BAR -->
+		<div class="search-box mb-5" data-aos="fade-up">
 
-</section>
- <section class="products py-5">
+			<input type="text" placeholder="Search products...">
 
-	<div class="container">
-
-		<h2 class="products-title text-center mb-5" data-aos="fade-up">
-			Our Products
-		</h2>
-
-		<div class="owl-carousel products-carousel">
-
-			<div class="product-card">
-				<img src="images/jersy.avif">
-				<div class="product-info">
-					<h5>Jerseys</h5>
-					<p>Custom sports jerseys for professional teams.</p>
-				</div>
-			</div>
-
-			<div class="product-card">
-				<img src="images/tshirt.webp">
-				<div class="product-info">
-					<h5>T-Shirts</h5>
-					<p>High quality sports and casual t-shirts.</p>
-				</div>
-			</div>
-
-			<div class="product-card">
-				<img src="images/tracksuits.jpg">
-				<div class="product-info">
-					<h5>Track Suits</h5>
-					<p>Comfortable and stylish training wear.</p>
-				</div>
-			</div>
-
-			<div class="product-card">
-				<img src="images/caps.webp">
-				<div class="product-info">
-					<h5>Caps</h5>
-					<p>Stylish sports caps for teams and events.</p>
-				</div>
-			</div>
-
-			<div class="product-card">
-				<img src="images/trainingwear.webp">
-				<div class="product-info">
-					<h5>Training Wear</h5>
-					<p>Performance training gear for athletes.</p>
-				</div>
-			</div>
-
-			<div class="product-card">
-				<img src="images/uniform.jpg">
-				<div class="product-info">
-					<h5>Sports Uniforms</h5>
-					<p>Fully customized uniforms for clubs and schools.</p>
-				</div>
-			</div>
+			<button>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
 
 		</div>
 
-	</div>
-
-</section>
-
- <section class="services py-5">
-
-	<div class="container">
-
-		<h2 class="services-title text-center mb-5" data-aos="fade-up">What We Provide</h2>
-
+		<!-- PRODUCTS GRID -->
 		<div class="row g-4">
 
+			<!-- PRODUCT -->
 			<div class="col-lg-3 col-md-6" data-aos="zoom-in">
-				<div class="service-card">
 
-					<div class="service-icon">
-						<i class="fa-solid fa-pencil-ruler"></i>
+				<div class="list-card">
+
+					<img src="images/jersey1.webp">
+
+					<div class="list-info">
+
+						<h5>Team Jersey Red</h5>
+
+						<p>High-quality breathable fabric</p>
+
+						<a href="product_details.html" class="view-btn">View Details</a>
+
 					</div>
 
-					<h5>Custom Design</h5>
-
-					<p>
-						Unique sportswear tailored to match each team’s
-						identity and style.
-					</p>
-
 				</div>
+
 			</div>
 
+			<!-- repeat -->
 
 			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-				<div class="service-card">
 
-					<div class="service-icon">
-						<i class="fa-solid fa-shirt"></i>
+				<div class="list-card">
+
+					<img src="images/jersey2.jpg">
+
+					<div class="list-info">
+
+						<h5>Training Jersey Blue</h5>
+
+						<p>Lightweight performance wear</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
 					</div>
 
-					<h5>Premium Materials</h5>
-
-					<p>
-						High-performance fabrics designed for comfort,
-						durability and movement.
-					</p>
-
 				</div>
-			</div>
 
+			</div>
 
 			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-				<div class="service-card">
 
-					<div class="service-icon">
-						<i class="fa-solid fa-industry"></i>
+				<div class="list-card">
+
+					<img src="images/jersey3.jpg">
+
+					<div class="list-info">
+
+						<h5>Club Jersey Black</h5>
+
+						<p>Custom fit and premium finish</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
 					</div>
 
-					<h5>Local Manufacturing</h5>
-
-					<p>
-						Produced in our Doha facility with faster
-						production and delivery.
-					</p>
-
 				</div>
-			</div>
 
+			</div>
 
 			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-				<div class="service-card">
 
-					<div class="service-icon">
-						<i class="fa-solid fa-layer-group"></i>
+				<div class="list-card">
+
+					<img src="images/jersey1.webp">
+
+					<div class="list-info">
+
+						<h5>Match Jersey White</h5>
+
+						<p>Designed for match performance</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
 					</div>
 
-					<h5>Bulk Production</h5>
+				</div>
 
-					<p>
-						Ideal for clubs, academies, schools and
-						large sporting events.
-					</p>
+			</div>
+			<div class="col-lg-3 col-md-6" data-aos="zoom-in">
+
+				<div class="list-card">
+
+					<img src="images/jersey1.webp">
+
+					<div class="list-info">
+
+						<h5>Team Jersey Red</h5>
+
+						<p>High-quality breathable fabric</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
+					</div>
 
 				</div>
+
 			</div>
 
-		</div>
+			<!-- repeat -->
 
-	</div>
+			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
 
-</section>
+				<div class="list-card">
 
+					<img src="images/jersey2.jpg">
 
+					<div class="list-info">
 
-<section class="process">
+						<h5>Training Jersey Blue</h5>
 
-	<div class="container">
+						<p>Lightweight performance wear</p>
 
-		<h2 class="process-title text-center mb-5" data-aos="fade-up">
-			Our Process
-		</h2>
+						<a href="#" class="view-btn">View Details</a>
 
-		<div class="row g-4 text-center">
+					</div>
 
-			<div class="col-lg-3 col-md-6" data-aos="fade-up">
-				<div class="process-step">
-					<div class="step-number">01</div>
-					<h5>Consultation</h5>
-					<p>Understanding your team’s needs and requirements.</p>
 				</div>
+
 			</div>
 
-			<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-				<div class="process-step">
-					<div class="step-number">02</div>
-					<h5>Design</h5>
-					<p>Creating unique and customized sportswear designs.</p>
+			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+
+				<div class="list-card">
+
+					<img src="images/jersey3.jpg">
+
+					<div class="list-info">
+
+						<h5>Club Jersey Black</h5>
+
+						<p>Custom fit and premium finish</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
+					</div>
+
 				</div>
+
 			</div>
 
-			<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-				<div class="process-step">
-					<div class="step-number">03</div>
-					<h5>Production</h5>
-					<p>Manufacturing with high-quality materials.</p>
+			<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+
+				<div class="list-card">
+
+					<img src="images/jersey1.webp">
+
+					<div class="list-info">
+
+						<h5>Match Jersey White</h5>
+
+						<p>Designed for match performance</p>
+
+						<a href="#" class="view-btn">View Details</a>
+
+					</div>
+
 				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-				<div class="process-step">
-					<div class="step-number">04</div>
-					<h5>Delivery</h5>
-					<p>Fast and reliable delivery across Qatar.</p>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-<section class="why-us">
-
-	<div class="container">
-
-		<div class="row align-items-center">
-
-			<div class="col-lg-6" data-aos="fade-right">
-
-				<h2 class="why-title">Why Choose Batigol</h2>
-
-				<ul class="why-list">
-
-					<li>✔ Trusted by top clubs in Qatar</li>
-					<li>✔ High-quality custom sportswear</li>
-					<li>✔ Fast local production</li>
-					<li>✔ Experienced since 2013</li>
-					<li>✔ Reliable delivery and support</li>
-
-				</ul>
-
-			</div>
-
-			<div class="col-lg-6" data-aos="fade-left">
-
-				<img src="images/why.jpg" class="img-fluid why-img">
 
 			</div>
 
 		</div>
 
 	</div>
+    <div class="pagination-container text-center mt-5" data-aos="fade-up">
+
+	<ul class="pagination-custom">
+
+		<li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+
+		<li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+
+	</ul>
+
+</div>
 
 </section>
-
-
 <section class="clients">
 
 	<div class="container">
@@ -585,9 +485,6 @@
 
 </section>
 
-
-
-
 <footer class="site-footer">
 
 	<div class="container">
@@ -701,6 +598,7 @@
 
 
 
+
 <script>
 
 	let lastScroll = 0;
@@ -710,24 +608,15 @@
 
 		let currentScroll = window.pageYOffset;
 
-		// Add background on scroll
 		if(currentScroll > 50){
 			navbar.classList.add("scrolled");
 		}else{
 			navbar.classList.remove("scrolled");
 		}
 
-		// Only hide navbar on desktop
-		if(window.innerWidth > 992){
-
-			if(currentScroll > lastScroll){
-				navbar.style.top = "-100px";
-			}else{
-				navbar.style.top = "0";
-			}
-
+		if(currentScroll > lastScroll){
+			navbar.style.top = "-100px";
 		}else{
-			// Always show navbar on mobile
 			navbar.style.top = "0";
 		}
 
